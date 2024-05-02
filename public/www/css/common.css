@@ -1,13 +1,31 @@
 @charset "utf-8";
+@import "./Kakaofont.css";
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Kakao";
+  font-style: normal;
+  font-weight: 700;
+
+  font-optical-sizing: auto;
+}
 
 .wrap {
   position: relative;
-  padding-top: 70px;
+  font-family: "Kakao";
+  font-style: normal;
+  font-weight: 700;
 }
 
 .inner {
-  width: calc(100% - 30px);
-  max-width: 1170px;
+  max-width: 1120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
