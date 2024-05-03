@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카카오같이가치</title>
     <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/Kakaofont.css" />
+
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <link rel="stylesheet" href="./css/reset.css" />
+
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/mainleft.css" />
     <link rel="stylesheet" href="./css/mainright.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     <!-- js -->
     <script src="./js/header.js"></script>
@@ -61,10 +65,132 @@
         <div class="main-left">메인 좌측</div>
 
         <!-- 메인 우측 박민경 -->
-        <div class="main-right"></div>
+        <div class="main-right">
+          <div class="mr-list">
+            <!-- 기부금 영역 -->
+
+            <div class="mr-donation">
+              <div class="inner">
+                <a href="#" class="donation-box">
+                  <div class="mr-yellow-box">
+                    <div class="mr-yellow-top">
+                      <div class="mr-yellow-txt">
+                        <p>우리가 같이만든 변화들</p>
+                        <p>2024.05.04 기준</p>
+                      </div>
+                    </div>
+                    <div class="mr-yellow-bottom">
+                      <p>총 기부금</p>
+                      <p>74,222,928,505원</p>
+                    </div>
+                  </div>
+                  <div class="mr-review-box">
+                    <span>따뜻한 후기</span>
+                    <p>
+                      청년들의 장바구니가 집사님들의 도움으로 가득 찼습니다!
+                    </p>
+                    <p>
+                      외로움에 익숙했던 청년들에게 집사들의 따뜻한 도움이 모여
+                      188,500,000원의 후원금이 모였습니다. 이 소중한 후원금은
+                      지난해, 100여 명의 청년들에게 식재료로 전달되었습니다.
+                    </p>
+                  </div>
+
+                  <!-- <div class="list-box-cate">
+                    <img
+                      src="./images/icon/${item.icon}"
+                      alt="${item.category}"
+                    />
+                    <span style="color:${item.txtcolor};"
+                      >${item.category}</span
+                    >
+                  </div>
+                  <p class="list-box-title">${item.title}</p>
+                  <span class="list-box-day">${item.day}</span> -->
+                </a>
+              </div>
+            </div>
+            <!-- 배너 영역 -->
+            <div class="main-r-banner"></div>
+
+            <!-- 뉴스 영역 -->
+            <div class="main-r-list-news"></div>
+          </div>
+        </div>
       </main>
       <!-- 하단 박민경 -->
-      <footer class="footer">하단</footer>
+      <footer class="footer">
+        <!-- 하단 사이트 정보 및 아이콘 -->
+        <div class="footer-top">
+          <div class="inner">
+            <div class="footer-top-info">
+              <a href="#" class="footer-logo">
+                <img src="./images/logo_pc.svg" alt="카카오같이가치" />
+              </a>
+              <p class="footer-top-des">
+                카카오같이가치는 카카오와 카카오임팩트가 함께합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 하단 카피라이터 및 SNS 링크 -->
+        <div class="footer-bottom">
+          <div class="inner">
+            <div class="footer-bottom-info">
+              <ul class="info-list">
+                <li>
+                  <a href="#">© Kakao Corp.</a>
+                </li>
+                <li>
+                  <a href="#">고객센터</a>
+                </li>
+                <li>
+                  <a href="#">문의하기</a>
+                </li>
+                <li>
+                  <a href="#">이용약관</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="personal-info">개인정보처리방침</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- SNS 목록 -->
+            <div class="footer-bottom-sns">
+              <ul class="sns-list">
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/footer/footer_kakaotalk_gray80.svg"
+                      alt="카카오같이가치"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/footer/footer_facebook_gray80.svg"
+                      alt="카카오같이가치"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/footer/footer_instagram_gray80.svg"
+                      alt="카카오같이가치"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <span class="temp-copy">© Kakao Corp.</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

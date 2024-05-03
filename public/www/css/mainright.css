@@ -1,0 +1,14 @@
+.mr-donation {
+  width: 360px;
+  height: 530px;
+  background-color: orange;
+
+  margin-bottom: 20px;
+}
+
+.mr-yellow-box {
+  border-radius: 12px 12px 0px 0px;
+  padding: 34px 26px 29px;
+  background-color: rgb(255, 232, 0);
+  height: 249px;
+}
