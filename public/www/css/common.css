@@ -15,8 +15,8 @@ a {
 }
 
 html {
-  background-color: rgb(247, 247, 247);
   overflow-x: hidden;
+  background-color: rgb(247, 247, 247);
 }
 body {
   font-family: "Kakao";
@@ -35,9 +35,9 @@ body {
 
 .inner {
   max-width: 1120px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  height: 100%;
 }

@@ -2,70 +2,114 @@
 
 .header {
   height: 70px;
+  background: #fff;
 }
 
 .header-logo {
 }
 
 .header-logo a {
-  display: block;
   width: 115px;
   height: 70px;
-  background: url("../images/logo_pc.svg") center center / contain no-repeat;
+  display: block;
+  background: url("../images/logo_pc.svg") center / contain no-repeat;
 }
 
 .header-navi {
   height: 100%;
   justify-content: center;
+  flex: 1 0 auto;
 }
 .header-menu-img {
-  display: flex;
   width: 24px;
   height: 24px;
+  display: flex;
 }
 
 .navi-list {
-  height: 70px;
+  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.navi-list li {
+  position: relative;
+  height: 100%;
+  display: list-item;
+  margin: 0px 11px;
+  border-bottom: 2px solid rgb(57, 57, 57);
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: -0.1px;
+  box-sizing: border-box;
 }
 
 .navi-list li a {
   padding: 0px 14px;
-  font-family: "KakaoBig Bold";
+  font-family: "Kakao";
+  font-weight: 700;
   font-size: 16px;
-  color: rgb(68, 68, 68);
+  color: rgb(32, 32, 32);
 }
+
 .navi-right {
   display: flex;
 }
-
-.navi-profile a {
+.navi-profile {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
+  font: inherit;
+}
+.avatar-box {
+  position: relative;
   display: flex;
+}
+.avatar-a {
   position: relative;
   width: 24px;
   height: 24px;
-  background: url("../images/avatar.png") no-repeat center;
-  background-size: contain;
+  display: flex;
+}
+.avatar-div {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.avatar-div img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  mask-image: url("//t1.kakaocdn.net/together_image/svg/squircle.svg");
+  mask-size: 100% 100%;
 }
 
-.navi-search a {
-  margin-left: 19px;
-  margin-right: 11px;
-  padding: 8px;
-  display: flex;
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navi-search {
   position: relative;
   width: 22px;
   height: 22px;
+  display: flex;
+  margin-right: 11px;
+  margin-left: 19px;
+  padding: 8px;
   background: url("../images/icon-search.png") no-repeat center;
   background-size: contain;
 }
 
-.navi-menu a {
-  background: url("../images/icon-hbr.png") no-repeat center;
-
+.navi-menu {
   width: 18px;
   height: 18px;
-  background-size: contain;
   padding: 8px;
+  background: url("../images/icon-hbr.png") no-repeat center;
+  background-size: contain;
 }
