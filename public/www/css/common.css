@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Kakao:wght@400;200;700&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.woff2");
 @import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.woff2");
@@ -16,28 +17,35 @@ a {
 
 html {
   overflow-x: hidden;
-  background-color: rgb(247, 247, 247);
 }
 body {
-  font-family: "Kakao";
+  /* font-family: "Kakao"; */
+  /* 밑에 처럼 font-family주는건 어떨까요? */
+  /* 백그라운드 컬러는 body에 들어가야한다고 생각됩니다 */
+
+  background-color: rgb(247, 247, 247);
+  font-family: "Kakao", sans-serif;
   font-style: normal;
   font-weight: 400;
-
   font-optical-sizing: auto;
 }
 
 .wrap {
   position: relative;
-  font-family: "Kakao";
+  /* font-family: "Kakao";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700; */
 }
+/* 중복되는 것과 굵기가 전체적으로 다 적용돼어서 주석처리하였습니다 */
 
 .inner {
+  width: calc(100% - 30px);
+  /* 반응형을 위해서 width값 임시로 주었습니다 같이 수정해봐요 */
   max-width: 1120px;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  /* height: 100%; */
+  /* 하이트는 100퍼 안줘도 자동으로 된다고 생각됩니다 */
 }

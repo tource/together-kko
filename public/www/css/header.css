@@ -112,4 +112,6 @@
   padding: 8px;
   background: url("../images/icon-hbr.png") no-repeat center;
   background-size: contain;
+
+  border: none;
 }
