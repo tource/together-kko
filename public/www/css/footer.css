@@ -1,0 +1,157 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 45px;
+
+  border-top: 1px solid rgb(238, 238, 238);
+}
+
+.footer .inner {
+  height: auto;
+}
+.footer-logo {
+  width: 115px;
+  height: 18px;
+  display: block;
+}
+.footer-logo img {
+  width: 100%;
+}
+.footer-top-des {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  font-family: "Kakao", sans-serif;
+}
+
+.info-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-bottom-info a {
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: -0.1px;
+}
+
+.footer-bottom-info li {
+  position: relative;
+  display: block;
+  /* width: 100px; */
+  text-align: center;
+
+  margin-right: 7px;
+}
+
+.footer-bottom-info li::after {
+  border-radius: 100%;
+  background-color: rgb(68, 68, 68);
+
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: -9px;
+  width: 2px;
+  height: 2px;
+}
+
+.footer-bottom-info li:last-child:after {
+  display: none;
+}
+
+.personal-info {
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: -0.1px;
+  font-weight: 700;
+}
+
+.footer-top-des {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: -0.1px;
+}
+
+.sns-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sns-list a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.temp-copy {
+  display: none;
+}
+/* .kakao-corp {
+  font-family: "Inter", "Kakao", sans-serif;
+} */
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .footer-top-info {
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .footer-top-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-top-des {
+    text-align: center;
+  } */
+
+  .footer {
+    padding: 27px 20px 29px;
+  }
+  .footer-top-des {
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+  .footer-top {
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+
+  .footer-bottom .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .info-list li:first-child {
+    display: none;
+  }
+  .sns-list li:last-child {
+    display: inline-block;
+  }
+  .temp-copy {
+    display: inline-block;
+    margin-top: 16px;
+
+    color: rgb(68, 68, 68);
+    font-size: 12px;
+    font-style: normal;
+    overflow-wrap: break-word;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+  }
+}
