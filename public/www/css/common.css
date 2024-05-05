@@ -1,9 +1,9 @@
 @charset "utf-8";
-
-@import url("https://fonts.googleapis.com/css2?family=Kakao:wght@400;200;700&display=swap");
-@import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.woff2");
-@import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.woff2");
-@import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.woff2");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+KR:wght@100..900&display=swap");
+/* 새로운 폰트 2개를 추가하였습니다 */
+/* 혹시 자세히보면 둥글둥글한 그맀들 font-family: "M PLUS Rounded 1c", sans-serif; 이거 쓰는 건 어떠세요? */
+/* 총 기부금 숫자에 이 폰트 썼어요 */
 
 * {
   margin: 0px;
@@ -24,7 +24,7 @@ body {
   /* 백그라운드 컬러는 body에 들어가야한다고 생각됩니다 */
 
   background-color: rgb(247, 247, 247);
-  font-family: "Kakao", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -45,7 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0px auto;
   /* height: 100%; */
   /* 하이트는 100퍼 안줘도 자동으로 된다고 생각됩니다 */
 }

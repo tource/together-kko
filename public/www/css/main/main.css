@@ -1,11 +1,15 @@
 .main {
-  display: block;
+  /* display: block;
   margin: 0px;
   padding: 0px;
   border: 0px;
-  font: inherit;
+  font: inherit; */
+
+  /* 혹시 이 윗부분은 왜 들어가는걸까요? 없어도 변함이 없어요... */
+
+  margin-top: 20px;
 }
-.main-inner {
+/* .main-inner {
   width: 1120px;
   display: flex;
   justify-content: space-between;
@@ -13,4 +17,17 @@
   margin-top: 30px;
 
   padding-bottom: 46px;
+} */
+
+.main-inner {
+  width: calc(100% - 30px);
+  max-width: 1120px;
+  display: flex;
+  margin: 0px auto;
+  gap: 60px;
+}
+/* 구조에 문제가 생겨 이렇게 수정하였습니다 */
+
+.main .inner {
+  align-items: start;
 }

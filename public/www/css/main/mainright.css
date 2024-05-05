@@ -1,0 +1,144 @@
+.mr-list {
+}
+
+.donation-box {
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+}
+
+.mr-donation {
+  width: 360px;
+  height: 530px;
+
+  margin-bottom: 20px;
+}
+
+.mr-donation .inner {
+  margin-right: 0;
+}
+
+.mr-yellow-box {
+  border-radius: 12px 12px 0px 0px;
+  padding: 34px 26px 29px;
+  background-color: rgb(255, 232, 0);
+  height: 249px;
+}
+.yellow-text-1 {
+  color: rgb(32, 32, 32);
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Kakao", sans-serif;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  /* 임시 굵기 */
+  font-weight: 500;
+}
+
+.yellow-date {
+  padding-top: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-style: normal;
+  font-family: "Kakao", sans-serif;
+  overflow-wrap: break-word;
+}
+
+.mr-review-box {
+  height: 281px;
+  padding: 31px 26px 46px;
+  border-radius: 0px 0px 12px 12px;
+  box-sizing: border-box;
+}
+
+.mr-yellow-top {
+  position: relative;
+}
+
+.mr-yellow-bottom {
+  height: 60px;
+  padding: 0px 11px;
+  margin-top: 41px;
+
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+
+.mr-yellow-bottom a {
+  display: flex;
+}
+
+.yb-text-1 {
+  color: rgb(68, 68, 68);
+  margin-right: 14px;
+}
+.yb-text-2 {
+  color: rgb(32, 32, 32);
+  font-style: normal;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  overflow-wrap: break-word;
+
+  font-size: 18px;
+  letter-spacing: -0.18px;
+}
+
+.won-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.char-bear {
+  right: 20px;
+  top: 19px;
+  width: 105px;
+  height: 133px;
+
+  position: absolute;
+  right: -12px;
+  top: -15px;
+  width: 108px;
+  height: auto;
+}
+
+.mrb-review {
+  color: rgb(136, 136, 136);
+  font-size: 13px;
+  font-style: normal;
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-wrap: break-word;
+}
+
+.mrb-review-2 {
+  color: rgb(68, 68, 68);
+  font-size: 17px;
+  font-style: normal;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  line-height: 1.47;
+
+  padding-top: 16px;
+  max-height: 56px;
+  font-size: 18px;
+}
+
+.mrb-review-3 {
+  color: rgb(32, 32, 32);
+  font-size: 14px;
+  font-style: normal;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  overflow-wrap: break-word;
+
+  line-height: 1.79;
+
+  max-height: 108px;
+  padding-top: 16px;
+  color: rgb(74, 74, 74);
+}
