@@ -19,7 +19,7 @@
 .footer-top-des {
   padding-top: 16px;
   padding-bottom: 18px;
-  font-family: "Kakao", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .info-list {
@@ -51,7 +51,7 @@
 
   position: absolute;
   content: "";
-  top: 8px;
+  top: 10px;
   right: -9px;
   width: 2px;
   height: 2px;
@@ -67,7 +67,7 @@
   font-style: normal;
   line-height: 1.57;
   letter-spacing: -0.1px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .footer-top-des {
@@ -93,9 +93,10 @@
 .temp-copy {
   display: none;
 }
-/* .kakao-corp {
-  font-family: "Inter", "Kakao", sans-serif;
-} */
+.footer-copyright {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: 0.2px;
+}
 
 /* 반응형 */
 @media (max-width: 768px) {
