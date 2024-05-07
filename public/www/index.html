@@ -17,9 +17,6 @@
     <link rel="stylesheet" href="./css/main/mainleft.css" />
     <link rel="stylesheet" href="./css/main/mainright.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/mainleft.css" />
-    <link rel="stylesheet" href="./css/mainright.css" />
 
     <!-- js -->
     <script src="./js/header.js"></script>
@@ -32,16 +29,19 @@
         <div class="inner">
           <!-- 상단 로고 -->
           <div class="header-logo">
-            <a href="#">
-              <img />
-            </a>
+            <a href="#"></a>
           </div>
           <!-- 상단 메뉴 -->
           <nav class="header-navi">
             <ul class="navi-list">
               <li><a href="#">홈</a></li>
-              <li><a href="#">매달기부</a></li>
-              <li><a href="#">같이기부</a></li>
+              <li>
+                <a href="#"
+                  >매달기부
+                  <i class="red-dot"></i>
+                </a>
+              </li>
+              <li><a href="#">같이기부 </a></li>
               <li><a href="#">모두의행동</a></li>
               <li><a href="#">마음날씨</a></li>
               <li><a href="#">캠페인</a></li>
@@ -56,13 +56,29 @@
               </a>
             </div>
           </div>
-          <a href="#" class="navi-search"></a>
-          <button href="#" class="navi-menu"></button>
+          <a href="#" class="navi-search">
+            <div>
+              <img
+                class="search-img"
+                src="./images/icon-search.png"
+                alt="같이가치 돋보기 아이콘"
+              />
+            </div>
+          </a>
+          <a href="#" class="navi-menu">
+            <div>
+              <img
+                class="navi-menu-img"
+                src="./images/icon-hbr.png"
+                alt="같이가치 메뉴 아이콘"
+              />
+            </div>
+          </a>
         </div>
       </header>
       <main class="main">
         <!-- main inner은 inner로 되야한다고 생각됩니다 -->
-        <div class="main-inner">
+        <div class="inner">
           <!-- 메인 좌측 김민기 -->
           <div class="main-left">
             <a href="#" class="mlt"></a>
