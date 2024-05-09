@@ -49,3 +49,22 @@ body {
   /* height: 100%; */
   /* 하이트는 100퍼 안줘도 자동으로 된다고 생각됩니다 */
 }
+
+/* 커먼 코드 박민경 */
+.basic-border {
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+}
+
+.main-cm-title {
+  line-height: 1.61;
+  color: rgb(32, 32, 32);
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-wrap: break-word;
+
+  margin-bottom: 19px;
+  cursor: pointer;
+}
