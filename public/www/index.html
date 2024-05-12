@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카카오같이가치</title>
     <!-- css -->
+    <link rel="icon" href="../favicon.ico">
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
@@ -17,9 +18,17 @@
     <link rel="stylesheet" href="./css/main/mainleft.css" />
     <link rel="stylesheet" href="./css/main/mainright.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- js -->
     <script src="./js/header.js"></script>
+    <script src="./js/reviewslide.js"></script>
   </head>
   <body>
     <!-- wrap이 잘못 wrap되어 있어 수정하였습니다 -->
@@ -111,67 +120,178 @@
               <!-- 기부금 영역 -->
 
               <div class="mr-donation">
-                <div class="inner">
-                  <div href="#" class="donation-box">
-                    <div class="mr-yellow-box">
-                      <div class="mr-yellow-top">
-                        <div class="mr-yellow-txt">
-                          <a href="#" class="yellow-text-1"
-                            ><span>우리가 <br />같이만든 변화들</span>
-                          </a>
-                          <p class="yellow-date">2024.05.04 기준</p>
-                        </div>
-                        <img
-                          src="./images/img_choonsik_231226.png"
-                          class="char-bear"
-                          alt="곰캐릭터"
-                        />
-                      </div>
-                      <div class="mr-yellow-bottom">
-                        <a href="#">
-                          <img
-                            src="./images/ico_won.png"
-                            class="won-icon"
-                            alt="원아이콘"
-                          />
-                          <p class="yb-text-1">총 기부금</p>
-                          <p class="yb-text-2">74,222,928,505원</p>
+                
+                <div href="#" class="donation-box basic-border">
+                  <div class="mr-yellow-box">
+                    <div class="mr-yellow-top">
+                      <div class="mr-yellow-txt">
+                        <a href="#" class="yellow-text-1"
+                          ><span>우리가 <br />같이만든 변화들</span>
                         </a>
+                        <p class="yellow-date">2024.05.04 기준</p>
                       </div>
+                      <img
+                        src="./images/img_choonsik_231226.png"
+                        class="char-bear"
+                        alt="곰캐릭터"
+                      />
                     </div>
+                    <div class="mr-yellow-bottom">
+                      <a href="#">
+                        <img
+                          src="./images/ico_won.png"
+                          class="won-icon"
+                          alt="원아이콘"
+                        />
+                        <p class="yb-text-1">총 기부금</p>
+                        <p class="yb-text-2">74,222,928,505원</p>
+                      </a>
+                    </div>
+                  </div>
                     <div class="mr-review-box">
                       <span class="mrb-review">따뜻한 후기</span>
-                      <p class="mrb-review-2">
-                        청년들의 장바구니가 집사님들의 도움으로 가득 찼습니다!
-                      </p>
-                      <p class="mrb-review-3">
-                        외로움에 익숙했던 청년들에게 집사들의 따뜻한 도움이 모여
-                        188,500,000원의 후원금이 모였습니다. 이 소중한 후원금은
-                        지난해, 100여 명의 청년들에게 식재료로 전달되었습니다.
-                      </p>
-                    </div>
+                      <!-- Swiper -->
+                      <div class="swiper reviewslide">
+                        <div class="swiper-wrapper">
+                          <!-- <div class="swiper-slide">
+                            
+                            <p class="mrb-review-2">
+                              청년들의 장바구니가 집사님들의 도움으로 가득
+                              찼습니다!
+                            </p>
+                            <p class="mrb-review-3">
+                              외로움에 익숙했던 청년들에게 집사들의 따뜻한
+                              도움이 모여 188,500,000원의 후원금이 모였습니다.
+                              이 소중한 후원금은 지난해, 100여 명의 청년들에게
+                              식재료로 전달되었습니다.
+                            </p>
+                          </div> -->
+                        </div>
 
-                    <!-- <div class="list-box-cate">
-                    <img
-                      src="./images/icon/${item.icon}"
-                      alt="${item.category}"
-                    />
-                    <span style="color:${item.txtcolor};"
-                      >${item.category}</span
-                    >
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
                   </div>
-                  <p class="list-box-title">${item.title}</p>
-                  <span class="list-box-day">${item.day}</span> -->
+              
+              </div>
+
+                <!-- 배너 영역 -->
+                <div class="main-r-banner">
+                  <div href="#" class="banner-box basic-border">
+                    <div class="banner-inner">
+                      <div class="banner-txt-1">
+                        <p>
+                          마지막까지 <br />
+                          기다리고 있어요!
+                        </p>
+                      </div>
+                      <p class="banner-txt-2">종료임박 모금함 ></p>
+                    </div>
+                    <div class="banner-empty-box"></div>
+                  </div>
+                  <img src="images/waving_bear.png" class="donation-b-pics" />
+                </div>
+  
+                <!-- 테스트 영역 -->
+                <div class="main-r-list-test">
+                  <div class="main-test-box basic-border">
+                    <p class="main-text-box-title main-cm-title">
+                      오늘 너의 마음날씨는 어때?
+                    </p>
+                    <ul class="test-list">
+                      <li>
+                        <a href="#" class="test-list-out">
+                          <div class="test-list-img"></div>
+                          <div class="test-list-txt">
+                            <div class="test-list-txt-1">
+                              나는 끈기(GRIT)있는 사람일까?
+                            </div>
+                            <div class="test-list-txt-2">57,287명 참여</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="test-list-out">
+                          <div class="test-list-img"></div>
+                          <div class="test-list-txt">
+                            <div class="test-list-txt-1">
+                              만일, 내가 탐험가라면?
+                            </div>
+                            <div class="test-list-txt-2">378,508명 참여</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="test-list-out">
+                          <div class="test-list-img"></div>
+                          <div class="test-list-txt">
+                            <div class="test-list-txt-1">나의 행복소비 유형</div>
+                            <div class="test-list-txt-2">244,247명 참여</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="test-list-out">
+                          <div class="test-list-img"></div>
+                          <div class="test-list-txt">
+                            <div class="test-list-txt-1">
+                              내가 만약 운동선수라면?
+                            </div>
+                            <div class="test-list-txt-2">414,371명 참여</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
+  
+                <!-- 소식 영역 -->
+                <div class="main-r-list-news">
+                  <div class="main-r-list-news-box basic-border">
+                    <p class="main-cm-title">놓치면 아까운 같이가치 소식</p>
+                    <ul class="main-r-news-lists">
+                      <li>
+                        <a href="#" class="mr-news-title">카카오같이가치 카카오톡 채널을 추가해보세요!</a>
+                        <a href="#" class="mr-news-icon">
+                          <img
+                            src="../../public/www/images/ico_arrow_inverted.png"
+                            alt="아이콘"
+                          />
+                        </a href="#">
+                      </li>
+                      <li>
+                        <a class="mr-news-title" >참여만으로도 기부에 참여할 수 있어요!</a>
+                        <a href="#" class="mr-news-icon">
+                          <img
+                            src="../../public/www/images/ico_arrow_inverted.png"
+                            alt="아이콘"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a class="mr-news-title">같이가치를 통해 어떤 변화가 이루어질까요? 🔍</a>
+                        <a href="#" class="mr-news-icon">
+                          <img
+                            src="../../public/www/images/ico_arrow_inverted.png"
+                            alt="아이콘"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a class="mr-news-title">모금을 제안하고 싶은 당신을 위한 꿀팁💡</a>
+                        <a href="#" class="mr-news-icon">
+                          <img
+                            src="../../public/www/images/ico_arrow_inverted.png"
+                            alt="아이콘"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
             </div>
           </div>
-          <!-- 배너 영역 -->
-          <div class="main-r-banner"></div>
-
-          <!-- 뉴스 영역 -->
-          <div class="main-r-list-news"></div>
         </div>
       </main>
       <!-- 하단 박민경 -->
