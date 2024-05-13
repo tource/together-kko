@@ -42,6 +42,7 @@ body {
   width: calc(100% - 30px);
   /* 반응형을 위해서 width값 임시로 주었습니다 같이 수정해봐요 */
   max-width: 1120px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
