@@ -165,6 +165,10 @@
     background: url("../images/logo_pc.svg") center / contain no-repeat;
     transform: translateX(-50%);
   }
+  .red-dot {
+    position: absolute;
+    top: 6px;
+  }
   .navi-menu {
     height: 55px;
     padding-top: 21px;
