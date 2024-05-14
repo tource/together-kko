@@ -29,3 +29,18 @@
   font-weight: 600;
   padding-bottom: 4px;
 }
+.mc-detail {
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+  font-style: normal;
+  padding-top: 4px;
+}
+.last-pay {
+}
+.mc-img {
+  width: 280px;
+  height: 168px;
+  background-color: red;
+}
+.mc-button {
+}

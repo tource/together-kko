@@ -43,18 +43,20 @@
 }
 
 .navi-list li a {
+  font-family: "KakaoBig Bold";
   padding: 0px 14px;
   font-size: 16px;
   font-weight: 700;
-  color: rgb(32, 32, 32);
+  color: rgb(68, 68, 68);
 }
 .red-dot {
-  position: absolute;
+  top: 2px;
   right: 6px;
+  position: absolute;
   width: 4px;
   height: 4px;
-  background-color: rgb(255, 90, 114);
   border-radius: 50%;
+  background-color: rgb(255, 90, 114);
 }
 
 .navi-right {

@@ -1,6 +1,27 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "KakaoBig regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2)
+      format("woff2"),
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "KakaoBig Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2)
+      format("woff2"),
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff)
+      format("woff");
+}
 /* 새로운 폰트 2개를 추가하였습니다 */
 /* 혹시 자세히보면 둥글둥글한 그맀들 font-family: "M PLUS Rounded 1c", sans-serif; 이거 쓰는 건 어떠세요? */
 /* 총 기부금 숫자에 이 폰트 썼어요 */
