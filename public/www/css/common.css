@@ -7,7 +7,8 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2)
+  src:
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2)
       format("woff2"),
     url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff)
       format("woff");
@@ -17,7 +18,8 @@
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2)
+  src:
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2)
       format("woff2"),
     url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff)
       format("woff");

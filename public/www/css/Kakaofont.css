@@ -2,7 +2,9 @@
   font-family: "Kakao";
   font-style: normal;
   font-weight: 400;
-  src: local("Kakao Regular"), local("KakaoOTF Regular"),
+  src:
+    local("Kakao Regular"),
+    local("KakaoOTF Regular"),
     url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.eot")
       format("eot"),
     url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.woff2")
@@ -17,7 +19,9 @@
   font-family: "Kakao";
   font-style: normal;
   font-weight: 200;
-  src: local("Kakao Light"), local("KakaoOTF Light"),
+  src:
+    local("Kakao Light"),
+    local("KakaoOTF Light"),
     url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.eot")
       format("eot"),
     url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.woff2")
@@ -32,7 +36,9 @@
   font-family: "Kakao";
   font-style: normal;
   font-weight: 700;
-  src: local("Kakao Bold"), local("KakaoOTF Bold"),
+  src:
+    local("Kakao Bold"),
+    local("KakaoOTF Bold"),
     url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.eot")
       format("eot"),
     url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.woff2")
