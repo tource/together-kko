@@ -366,3 +366,82 @@
 .reviewslide .swiper-pagination-bullet-active {
   background-color: rgb(32, 32, 32) !important;
 }
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .main-right {
+    margin-left: 0;
+  }
+
+  .mr-list {
+    width: 91.4vw;
+  }
+  .mr-donation {
+    width: 100%;
+  }
+
+  .reviewslide {
+    width: 84.6vw;
+  }
+
+  .main-r-news-lists li {
+    width: 100%;
+    height: 34.48vh;
+  }
+
+  .mr-news-icon img {
+    top: 287px;
+    right: 12px;
+  }
+  .yb-text-1 {
+    margin-right: 350px;
+  }
+  .donation-b-pics {
+    top: 215px;
+    right: 46px;
+  }
+
+  /* .mr-donation  {
+    width: 100%;
+    max-width: 768px
+  }
+  .banner-box {
+    width: 100%;
+    max-width: 768px
+  } */
+
+  /* .donation-box {
+    width: 100%;
+    
+    height: 47.32vw;
+    max-height: 530px;
+
+    
+  } */
+
+  /* .mr-donation {
+    width: 100%;
+    
+    height: 47.32vw;
+    max-height: 530px;
+
+
+    max-width: 100%;
+  } */
+}
+
+@media (max-width: 768px) {
+  .donation-b-pics {
+    top: 184px;
+    right: 61px;
+  }
+}
+
+@media (max-width: 414px) {
+  .donation-b-pics {
+    top: 104px;
+    right: 22px;
+    width: 100%;
+    max-width: 80px;
+  }
+}

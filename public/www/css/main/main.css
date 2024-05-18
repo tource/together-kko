@@ -29,3 +29,10 @@
 .main .inner {
   align-items: start;
 }
+
+/* 반응형, 박민경 */
+@media (max-width: 768px) {
+  .main .inner {
+    flex-wrap: wrap;
+  }
+}
