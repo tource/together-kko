@@ -2,6 +2,7 @@
   width: 100%;
   height: 70px;
   background: #fff;
+  border-bottom: 1px solid rgb(238, 238, 238);
 }
 
 .header-logo {
@@ -43,7 +44,7 @@
 }
 
 .navi-list li a {
-  font-family: "KakaoBig Bold";
+  
   padding: 0px 14px;
   font-size: 16px;
   font-weight: 700;
@@ -121,6 +122,61 @@
   height: 18px;
   vertical-align: top;
 }
+
+.mb-header-bg {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+}
+.mb-header-bg-show {
+  display: block !important;
+}
+.mb-header-menu {
+  position: fixed;
+  top: calc(70px - 1px);
+  left: 0;
+
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  z-index: 9999999;
+
+  background: rgba(255, 255, 255, 1);
+  transition: height 0.3s ease-in;
+}
+.mb-header-menu-show {
+  height: 160px !important;
+}
+
+.mb-header-menu .inner {
+  height: auto !important;
+  display: block;
+}
+
+
+@media all and (max-width: 880px) {
+ 
+  .navi-list{
+width: 100%;
+justify-content: space-between;
+padding:0 20px;
+  }
+  .navi-list li {
+    
+   
+    margin: 0 0;
+  }
+  .navi-list li a {
+    padding: 0px 0px;
+  }
+}
+
+
 @media all and (max-width: 768px) {
   .header {
     min-height: 92px;
@@ -142,19 +198,36 @@
     box-sizing: border-box;
   }
   .navi-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0;
+    
+    overflow-x: auto;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        padding: 0px 20px;
+        white-space: nowrap;
+        scrollbar-width: none;
   }
-  .navi-list li a {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
+  .navi-list li{
+    
+  }
+  .navi-list li a{
+    color: rgb(32, 32, 32);
+    font-size: 14px !important;
     font-style: normal;
-    font-weight: 400;
+    font: inherit; ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5px 4px 9px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    text-decoration: none;
   }
+  
+ 
 
   .header-logo a {
     position: absolute;
@@ -169,6 +242,7 @@
   }
   .red-dot {
     position: absolute;
+    right: 0;
     top: 6px;
   }
   .navi-menu {
@@ -195,4 +269,11 @@
   .navi-profile {
     display: none;
   }
+}
+
+@media all and (max-width: 578px){
+  .navi-list li a {
+    white-space: nowrap
+  }
+
 }
