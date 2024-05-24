@@ -1,8 +1,8 @@
 .header {
   width: 100%;
   height: 70px;
-  background: #fff;
   border-bottom: 1px solid rgb(238, 238, 238);
+  background: #fff;
 }
 
 .header-logo {
@@ -44,20 +44,19 @@
 }
 
 .navi-list li a {
-  
   padding: 0px 14px;
   font-size: 16px;
   font-weight: 700;
   color: rgb(68, 68, 68);
 }
 .red-dot {
+  position: absolute;
   top: 2px;
   right: 6px;
-  position: absolute;
   width: 4px;
   height: 4px;
-  border-radius: 50%;
   background-color: rgb(255, 90, 114);
+  border-radius: 50%;
 }
 
 .navi-right {
@@ -139,18 +138,25 @@
 .mb-header-menu {
   position: fixed;
   top: calc(70px - 1px);
-  left: 0;
-
-  width: 100%;
-  height: 0;
+  right: 0;
+  width: 0; /* 초기 상태에서 너비 0으로 설정 */
+  min-width: 280px;
+  max-width: 300px;
+  height: 100%; /* height를 100%로 변경하여 전체 높이로 설정 */
+  padding: 30px;
   overflow: hidden;
   z-index: 9999999;
-
-  background: rgba(255, 255, 255, 1);
-  transition: height 0.3s ease-in;
+  background: rgba(255, 255, 255, 100%);
+  transition: transform 0.3s ease-in-out; /* 애니메이션 설정 */
+  transform: translateX(100%); /* 화면 오른쪽 밖으로 이동 */
 }
+
 .mb-header-menu-show {
-  height: 160px !important;
+  width: 300px; /* 나타날 때 너비 설정 */
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  transform: translateX(0); /* 화면 안으로 이동 */
 }
 
 .mb-header-menu .inner {
@@ -158,24 +164,19 @@
   display: block;
 }
 
-
 @media all and (max-width: 880px) {
- 
-  .navi-list{
-width: 100%;
-justify-content: space-between;
-padding:0 20px;
+  .navi-list {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
   }
   .navi-list li {
-    
-   
     margin: 0 0;
   }
   .navi-list li a {
     padding: 0px 0px;
   }
 }
-
 
 @media all and (max-width: 768px) {
   .header {
@@ -198,36 +199,32 @@ padding:0 20px;
     box-sizing: border-box;
   }
   .navi-list {
-    
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0px 20px;
     overflow-x: auto;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        gap: 10px;
-        width: 100%;
-        padding: 0px 20px;
-        white-space: nowrap;
-        scrollbar-width: none;
+    white-space: nowrap;
+    scrollbar-width: none;
   }
-  .navi-list li{
-    
+  .navi-list li {
   }
-  .navi-list li a{
-    color: rgb(32, 32, 32);
+  .navi-list li a {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 4px 9px;
     font-size: 14px !important;
     font-style: normal;
-    font: inherit; ;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    height: 100%;
-    padding: 5px 4px 9px;
-    letter-spacing: normal;
     line-height: 1.5;
+    color: rgb(32, 32, 32);
     text-decoration: none;
+    letter-spacing: normal;
+    font: inherit;
+    box-sizing: border-box;
   }
-  
- 
 
   .header-logo a {
     position: absolute;
@@ -242,8 +239,8 @@ padding:0 20px;
   }
   .red-dot {
     position: absolute;
-    right: 0;
     top: 6px;
+    right: 0;
   }
   .navi-menu {
     height: 55px;
@@ -269,11 +266,19 @@ padding:0 20px;
   .navi-profile {
     display: none;
   }
+
+  .mb-header-menu {
+    left: 0;
+    right: auto;
+    transform: translateX(-100%);
+  }
+  .mb-header-menu-show {
+    transform: translateX(0);
+  }
 }
 
-@media all and (max-width: 578px){
+@media all and (max-width: 578px) {
   .navi-list li a {
-    white-space: nowrap
+    white-space: nowrap;
   }
-
 }
