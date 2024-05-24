@@ -57,16 +57,16 @@ window.addEventListener("load", function () {
     event.preventDefault();
     // 아이콘 바꾸기
     if (mbMenuOpen) {
+      mbMenuOpen = false;
       mbBt.classList.remove("mobile-menu-open");
       mbBg.classList.remove("mb-header-bg-show");
       mbMenu.classList.remove("mb-header-menu-show");
-      mbMenuOpen = false;
     } else {
+      mbMenuOpen = true;
       // 메뉴가 펼침이 아닌데 사용자가 클릭하면 메뉴를 펼침.
       mbBt.classList.add("mobile-menu-open");
       mbBg.classList.add("mb-header-bg-show");
       mbMenu.classList.add("mb-header-menu-show");
-      mbMenuOpen = true;
     }
   });
 
@@ -77,10 +77,10 @@ window.addEventListener("load", function () {
 
     if (winWidth > 1024) {
       if (mbMenuOpen) {
+        mbMenuOpen = false;
         mbBt.classList.remove("mobile-menu-open");
         mbBg.classList.remove("mb-header-bg-show");
         mbMenu.classList.remove("mb-header-menu-show");
-        mbMenuOpen = false;
       }
     }
   });
