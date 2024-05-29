@@ -1,47 +1,24 @@
 window.addEventListener("load", function () {
-  // 헤더에 라인의 CSS 적용
-  const header = document.querySelector(".header");
-  const headerActiveClass = "line-active";
-  const headerActiveValue = 0;
+  const menuButton = document.querySelector(".navi-menu");
+  const headerMenu = document.querySelector(".header-menu");
+  const headerMenubg = document.querySelector(".menu-bg");
 
-  function updateHeaderClass() {
-    if (window.scrollY > headerActiveValue) {
-      header.classList.add(headerActiveClass);
+  let menuOpen = false;
+
+  menuButton.addEventListener("click", function () {
+    menuOpen = !menuOpen;
+    headerMenu.classList.toggle("open");
+    headerMenubg.classList.toggle("open");
+
+    if (menuOpen === true) {
     } else {
-      header.classList.remove(headerActiveClass);
     }
-  }
+    console.log(menuOpen);
+  });
 
-  updateHeaderClass();
-  window.addEventListener("scroll", updateHeaderClass);
-
-  // 모바일 메뉴 관련
-  const mbBt = document.querySelector(".navi-menu");
-  const mbBg = document.querySelector(".mb-header-bg");
-  const mbMenu = document.querySelector(".mb-header-menu");
-  const mbHeaderMenu = document.querySelector(".mb-header-menu");
-  let mbMenuOpen = false;
-
-  function toggleMobileMenu(event) {
-    event.preventDefault();
-    mbMenuOpen = !mbMenuOpen;
-    mbBt.classList.toggle("mobile-menu-open", mbMenuOpen);
-    mbBg.classList.toggle("mb-header-bg-show", mbMenuOpen);
-    mbMenu.classList.toggle("mb-header-menu-show", mbMenuOpen);
-  }
-
-  function closeMobileMenuOnResize() {
-    if (window.innerWidth > 1024 && mbMenuOpen) {
-      mbMenuOpen = false;
-      mbBt.classList.remove("mobile-menu-open");
-      mbBg.classList.remove("mb-header-bg-show");
-      mbMenu.classList.remove("mb-header-menu-show");
-    }
-  }
-
-  mbBt.addEventListener("click", toggleMobileMenu);
-
-  mbBg.addEventListener("click", toggleMobileMenu);
-
-  window.addEventListener("resize", closeMobileMenuOnResize);
+  headerMenubg.addEventListener("click", function () {
+    menuOpen = false;
+    headerMenu.classList.remove("open");
+    headerMenubg.classList.remove("open");
+  });
 });
