@@ -129,12 +129,12 @@
 }
 
 .header-menu {
+  z-index: -99;
   position: fixed;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  z-index: -99;
 }
 .menu-bg {
   display: none;
@@ -143,7 +143,6 @@
 .menu-nav {
   width: 300px;
   padding: 30px;
-  z-index: 9999;
   background: #fff;
   transition: transform 0.3s ease-in-out;
   transform: translateX(100%);
@@ -153,6 +152,7 @@
 }
 
 .header-menu.open .menu-nav {
+  z-index: 9999;
   transform: translateX(0);
 }
 .header-menu.open .menu-bg {
