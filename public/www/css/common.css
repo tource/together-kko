@@ -55,6 +55,7 @@ body {
 
 .wrap {
   position: relative;
+  background-color: rgb(247, 247, 247);
   /* font-family: "Kakao";
   font-style: normal;
   font-weight: 700; */

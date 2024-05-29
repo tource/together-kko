@@ -1,3 +1,8 @@
+.scrollLock {
+  overflow: hidden;
+  touch-action: none;
+}
+
 .header {
   width: 100%;
   height: 70px;
@@ -44,6 +49,7 @@
 }
 
 .navi-list li a {
+  font-family: "KakaoBig Bold";
   padding: 0px 14px;
   font-size: 16px;
   font-weight: 700;
@@ -51,7 +57,7 @@
 }
 .red-dot {
   position: absolute;
-  top: 2px;
+  top: 0px;
   right: 6px;
   width: 4px;
   height: 4px;
@@ -122,44 +128,36 @@
   vertical-align: top;
 }
 
-.mb-header-bg {
+.header-menu {
   position: fixed;
-  top: 70px;
-  left: 0;
   width: 100%;
   height: 100%;
-  display: none;
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.7);
-}
-.mb-header-bg-show {
-  display: block !important;
-}
-.mb-header-menu {
-  display: none;
-  position: fixed;
-  top: calc(70px - 1px);
-  right: 0;
-  width: 0; /* 초기 상태에서 너비 0으로 설정 */
-  min-width: 280px;
-  max-width: 300px;
-  height: 100%; /* height를 100%로 변경하여 전체 높이로 설정 */
-  padding: 30px;
-  overflow: hidden;
-  z-index: 9999999;
-  background: rgba(255, 255, 255, 100%);
-  /* 화면 오른쪽 밖으로 이동 */
-}
-
-.mb-header-menu-show {
-  width: 300px; /* 나타날 때 너비 설정 */
   display: flex;
-  padding: 30px;
+  justify-content: flex-end;
+  z-index: -99;
+}
+.menu-bg {
+  display: none;
 }
 
-.mb-header-menu .inner {
-  height: auto !important;
+.menu-nav {
+  width: 300px;
+  padding: 30px;
+  z-index: 9999;
+  background: #fff;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+.header-menu.open {
+  z-index: 999;
+}
+
+.header-menu.open .menu-nav {
+  transform: translateX(0);
+}
+.header-menu.open .menu-bg {
   display: block;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media all and (max-width: 880px) {
@@ -173,6 +171,10 @@
   }
   .navi-list li a {
     padding: 0px 0px;
+  }
+  .red-dot {
+    right: -5px;
+    top: -3px;
   }
 }
 
@@ -225,7 +227,6 @@
   }
 
   .header-logo a {
-    position: absolute;
     top: 0px;
     left: 50%;
     width: 103px;
@@ -233,10 +234,8 @@
     height: 55px;
     display: block;
     background: url("../images/logo_pc.svg") center / contain no-repeat;
-    transform: translateX(-50%);
   }
   .red-dot {
-    position: absolute;
     top: 6px;
     right: 0;
   }
@@ -264,16 +263,14 @@
   .navi-profile {
     display: none;
   }
-
-  .mb-header-menu {
-    right: 0;
-    left: 0;
-    transition: transform 0.3s ease-in-out; /* 애니메이션 설정 */
-    transform: translateX(100%);
+  .header-menu {
+    justify-content: flex-start;
   }
-
-  .mb-header-menu-show {
-    transform: translateX(0);
+  .menu-nav {
+    transform: translateX(-100%);
+  }
+  .header-menu.open .menu-nav {
+    display: block;
   }
 }
 
